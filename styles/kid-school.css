@@ -16,13 +16,14 @@
 
 /* shared styles */
 
-body{
+body {
   margin-left: 140px;
   margin-right: 140px;
 }
 
 body {
-  max-width: 1560px;
+  /* min-width: 1100px; */
+  max-width: 1460px;
 }
 
 .display-flex{
@@ -30,7 +31,7 @@ body {
 }
 
 .hide{
-  display: hide;
+  display: none;
 }
 
 
@@ -41,7 +42,7 @@ body {
   margin-bottom: 20px;
 }
 .nav-title{
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
 }
 .nav-icon{
@@ -50,7 +51,7 @@ body {
   gap: 11px;
 }
 .nav-links{
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   margin-left: 186px;
   margin-right: 186px;
@@ -64,33 +65,33 @@ body {
   color: white;
   padding: 10px 60px;
   border-radius: 12px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   border: none;
 }
 .nav-link-1 {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   color: #FEA301;
   margin: 32px;
 }
 .nav-link-2 {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   color: rgb(1, 172, 253);
 }
 .nav-link-3 {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   color: rgb(5, 212, 223);
   margin: 32px;
 }
 .nav-link-4 {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   color: rgb(93, 88, 239);
 }
@@ -107,7 +108,7 @@ body {
   margin-right: 50px;
 }
 .banner-title{
-  font-size: 56px;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 #empowering{
@@ -118,19 +119,50 @@ body {
 }
 
 .banner-description{
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400; 
   margin: 24px 0px;
 }
 .btn-b{
   color: white;
   background-color: rgb(17, 17, 17);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 100;
   padding: 8px 30px;
   border: none;
   border-radius: 12px;
 }
 
+/* Responsive media query  */
 
+@media screen and (max-width: 576px) {
+  .navbar{
+    border: 1px solid #FEA301;
+    position: absolute;
+    width: 100%;
+  }
+  .nav-title{
+    display: none;
+  }
+  .nav-links{
+    display: none;
+  }
+  .nav-btn{
+    display: none;
+  }
+  body{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .banner{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .banner-img{
+    display: none;
+  }
+  .banner-img-media {
+    display: block;
+  }
+}
 
