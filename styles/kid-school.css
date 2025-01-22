@@ -16,121 +16,126 @@
 
 /* shared styles */
 
-body {
-  margin-left: 140px;
-  margin-right: 140px;
-}
-
-body {
-  /* min-width: 1100px; */
-  max-width: 1460px;
-}
-
 .display-flex{
   display: flex;
 }
 
-.hide{
+.display-hide{
   display: none;
 }
 
 
-/* navbar related styles start  */
+/* first navbar related styles start  */
+
 .navbar{
   justify-content: space-between;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  align-items: center;
+  padding: 10px 140px;
 }
-.nav-title{
+
+.logo{
+  justify-content: center;
+  align-items: center;
+}
+.logo h2 {
+  text-align: center;
   font-size: 2rem;
   font-weight: 700;
 }
-.nav-icon{
-  justify-content: left;
-  align-items: center;
-  gap: 11px;
+.logo img {
+  width: 40px;
+  margin-right: 10px;
 }
-.nav-links{
-  justify-content: space-around;
-  align-items: center;
-  margin-left: 186px;
-  margin-right: 186px;
+.nav-links {
+  gap: 25px;
 }
-.nav-btn{
-  justify-content: right;
-  align-items: center;
-}
-.btn-a{
-  background-color: rgb(254, 163, 1);
-  color: white;
-  padding: 10px 60px;
-  border-radius: 12px;
+
+.nav-links a {
   font-size: 1.25rem;
-  font-weight: 600;
-  border: none;
-}
-.nav-link-1 {
+  font-weight: 500;
   text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: bold;
+}
+#home {
+  font-weight: 700;
   color: #FEA301;
-  margin: 32px;
 }
-.nav-link-2 {
-  text-decoration: none;
+.contact-btn {
+  color: white;
+  background-color: #FEA301;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 30px;
   font-size: 1.25rem;
   font-weight: 500;
-  color: rgb(1, 172, 253);
 }
-.nav-link-3 {
-  text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: rgb(5, 212, 223);
-  margin: 32px;
+
+/* second navbar related style start  */
+
+.navbar-secondary {
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #FEA301;
+  padding: 10px 20px;
+  margin: 0px 140px;
 }
-.nav-link-4 {
-  text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: rgb(93, 88, 239);
+.logo-secondary img {
+  height: 30px;
+  width: auto;
 }
+.menubar {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  align-items: flex-end;
+}
+.line {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+}
+
 
 /* banner related style start  */
-.banner{
-  justify-content: space-between;
-  width: 100%;
-}
 
-.banner-content{
-  margin-top: 122px;
-  margin-bottom: 122px;
-  margin-right: 50px;
+.banner {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 140px;
+  margin-top: 50px;
 }
-.banner-title{
+.banner-text {
+  width: 640px;
+  height: 331px;
+}
+.banner-text h1 {
   font-size: 3.5rem;
   font-weight: 700;
-}
-#empowering{
-  color: rgb(254, 163, 1);
-}
-#towards{
-  color: rgb(1, 172, 253);
+  line-height: 1.2;
 }
 
-.banner-description{
+.banner-text p {
   font-size: 1.25rem;
-  font-weight: 400; 
-  margin: 24px 0px;
+  font-weight: 400;
+  color: black;
+  margin-top: 30px;
 }
-.btn-b{
+
+.enroll-btn {
   color: white;
-  background-color: rgb(17, 17, 17);
-  font-size: 1.25rem;
-  font-weight: 100;
-  padding: 8px 30px;
+  background-color: black;
   border: none;
   border-radius: 12px;
+  padding: 10px 30px;
+  margin-top: 30px;
+}
+.banner-img-primary img {
+  width: 310px;
+  height: auto;
+}
+.banner-img-secondary img {
+  width: 310px;
+  height: auto;
 }
 
 /* card related style start  */
@@ -139,6 +144,7 @@ body {
   background-image: url(../assets/bg.png);
   background-repeat: no-repeat;
   background-position: top right, top left;
+  padding: 0px 140px;
 }
 .card-title{
   font-size: 2.9rem;
@@ -166,12 +172,13 @@ body {
   font-size: 1rem;
   font-weight: 700;
 }
-.card-discription{
+.card-discription, .story-description {
   font-size: 1rem;
   font-weight: 500;
   color: rgb(128, 128, 128);
   padding-bottom: 38px;
   word-spacing: 5px;
+  line-height: 1.4;
 }
 .card-1{
   border: 1px solid rgb(222, 245, 255);
@@ -194,45 +201,93 @@ body {
   background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
   padding: 54px 40px;
 }
-.card-2{
 
+/* slide change btn and story heading related style */
+
+.slide-story {
+  padding: 0px 140px;
+}
+.stories-heading {
+  background-image: url(../assets/bg.png);
+  background-repeat: no-repeat;
+}
+.stories-heading {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.slide-change-btn{
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  gap: 10px;
 }
 
-.card-3{
-
+.btn{
+  border-radius: 100%;
+  background-color: #FEA301;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 60px;
+  height: 60px;
+  border: none;
 }
+
+.previous, .next {
+  background-color: #FEA301;
+}
+
+
+/* stories card related style  */
+
+
+
 
 /* Responsive media query  */
 
-/* @media screen and (max-width: 576px) {
-  .navbar{
-    border: 1px solid #FEA301;
-    position: absolute;
-    width: 100%;
-  }
-  .nav-title{
+ @media screen and (max-width: 576px) {
+  
+  /* body {
+    padding: 0px;
+    margin: 0px;
+  } */
+  .navbar {
     display: none;
   }
-  .nav-links{
-    display: none;
-  }
-  .nav-btn{
-    display: none;
-  }
-  body{
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .banner{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .banner-img{
-    display: none;
-  }
-  .banner-img-media {
+  .navbar-secondary {
     display: block;
-    margin-top: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+  }
+  .banner-img-secondary{
+    display: block;
+  }
+  .banner-img-primary {
+    display: none;
+  }
+  .banner {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0px;
+    margin: 0px;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  .slide-change-btn {
+    display: none;
   }
 }
- */
+
